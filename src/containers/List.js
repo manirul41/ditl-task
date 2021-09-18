@@ -1,3 +1,4 @@
+import { Grid } from "@material-ui/core";
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
@@ -33,8 +34,19 @@ const List = () => {
 
   return (
     <div>
-      <h1>List Data</h1>
-      <TableShow />
+      <Grid
+        container
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Grid item>
+          <h1>User Table</h1>
+        </Grid>
+        <Grid item>
+          <TableShow />
+        </Grid>
+      </Grid>
     </div>
   );
 };

@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(2),
   },
   table: {
-    minWidth: 650,
+    minWidth: 950,
   },
   visuallyHidden: {
     border: 0,
